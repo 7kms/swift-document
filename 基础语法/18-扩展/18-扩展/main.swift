@@ -196,4 +196,7 @@ func printIntegerKinds(_ numbers: Array<Int>) {
     }
     print("")
 }
+/**
+ 注: 由于已知 number.kind 是 Int.Kind 类型. 所以Int.Kind 中的所有成员值都可以使用简写形式，例如使用 .negative 而不是 Int.Kind.negative
+ */
 printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
