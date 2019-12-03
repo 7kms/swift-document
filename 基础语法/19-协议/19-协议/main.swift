@@ -503,7 +503,8 @@ for object in objects {
  协议可以定义可选要求，遵循协议的类型可以选择是否实现这些要求。
  在协议中使用 optional 关键字作为前缀来定义可选要求。
  
- 可选要求用在你需要和 Objective-C 打交道的代码中。协议和可选要求都必须带上 @objc 属性。标记 @objc 特性的协议只能被继承自 Objective-C 类的类或者 @objc 类遵循，其他类以及结构体和枚举均不能遵循这种协议。
+ 可选要求用在你需要和 Objective-C 打交道的代码中。协议和可选要求都必须带上 @objc 属性。
+ 标记 @objc 特性的协议只能被继承自 Objective-C 类的类,或者标记@objc的类所遵循，其他类以及结构体和枚举均不能遵循这种协议。
  */
 @objc protocol CounterDataSource {
     @objc optional func increment(forCount count: Int) -> Int
